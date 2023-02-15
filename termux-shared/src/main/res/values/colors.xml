@@ -6,8 +6,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="red_400">#FF0000</color>
-    <color name="red_800">#C4001D</color>
+    <color name="red_400">#1E2327</color>
+    <color name="red_800">#1E2327</color>
 
     <color name="grey_200">#EEEEEE</color>
     <color name="grey_400">#BDBDBD</color>
