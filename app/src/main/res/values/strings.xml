@@ -259,5 +259,6 @@
 
     <!-- Donate Preference -->
     <string name="donate_preference_title">Donate</string>
+    <string name="zylern_preference_title">Build By Zylern</string>
 
 </resources>
