@@ -568,6 +568,8 @@ public final class TermuxConstants {
 
     /** Termux donate url */
     public static final String TERMUX_DONATE_URL = TERMUX_SITE_URL + "/donate"; // Default: "https://termux.dev/donate"
+    
+    public static final String TERMUX_ZYLERN_URL = "https://github.com/Zylern/termux-app";
 
 
 
