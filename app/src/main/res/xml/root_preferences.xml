@@ -45,5 +45,11 @@
         app:title="@string/donate_preference_title"
         app:persistent="false"
         app:isPreferenceVisible="false"/>
+        
+    <Preference
+        app:key="zylern"
+        app:title="@string/zylern_preference_title"
+        app:persistent="false"
+        app:isPreferenceVisible="false"/>
 
 </PreferenceScreen>
