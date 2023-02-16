@@ -167,13 +167,10 @@ public class SettingsActivity extends AppCompatActivity {
         }
 
         private void configureZylernPreference(@NonNull Context context) {
-            Preference donatePreference = findPreference("zylern");
+            Preference zylernPreference = findPreference("zylern");
             if (zylernPreference != null) {
                 String signingCertificateSHA256Digest = PackageUtils.getSigningCertificateSHA256DigestForPackage(context);
                 if (signingCertificateSHA256Digest != null) {
-                    // If APK is a Google Playstore release, then do not show the donation link
-                    // since Termux isn't exempted from the playstore policy donation links restriction
-                    // Check Fund solicitations: https://pay.google.com/intl/en_in/about/policy/
                     String apkRelease = TermuxUtils.getAPKRelease(signingCertificateSHA256Digest);
                     if (apkRelease == null || apkRelease.equals(TermuxConstants.APK_RELEASE_GOOGLE_PLAYSTORE_SIGNING_CERTIFICATE_SHA256_DIGEST)) {
                         zylernPreference.setVisible(false);
